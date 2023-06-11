@@ -2,50 +2,31 @@ body {
     background-image: url('/Users/learnacademy/Desktop/preparedness-assessment-RodCato/preparedness-frontend/src/assets/background-image.jpeg');
     background-size: cover;
 }
-
-.entire-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+#btn-center {
+    background-color: #0dcaf0;
+    padding: 8px;
+    margin: 10px
 }
-
-
-
-
-#header {
+.entire-content {
+    text-align: center; 
+}
+h1 {
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+}  
+#header{
     font-size: 50px;
 }
-
-#input-label {
-    display: flex;
-    font-size: 35px;
-    color: white;
-    justify-content: center;
-}
-
-#form-input {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    width: 50%;
-    
-}
-
 .input {
     color: white;
     font-size: 35px;
     text-align: center;
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     padding: 6px 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+}
+#name {
+    font-size: 18px;
+}
 
-  }

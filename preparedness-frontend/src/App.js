@@ -16,17 +16,18 @@ const App = () => {
   return (
     <div className="entire-content">
     <h1 id="header">Preparedness Assessment</h1>
-      <div className="form" id="center-form">
+      <div className="form">
         <div className="input">
-          <Label for="name" id="input-label">Enter your name</Label>
+          <Label for="name">Enter your name</Label>
           <Input type="text" 
            value={name} 
            onChange={(e) => setName(e.target.value)} 
-           id="form-input"
+           id="name"
+           autoComplete="name"
            />
         </div>
-        <Button onClick={toggleModal}>Click Me</Button>
-        <Button type="reset" onClick={resetInput}>
+        <Button onClick={toggleModal} id="btn-center">Click Me</Button>
+        <Button type="reset" onClick={resetInput} id="btn-center">
           Reset
         </Button>
         <ModalComponent isOpen={modalOpen} toggle={toggleModal} name={name}/>
